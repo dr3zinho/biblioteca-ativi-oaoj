@@ -116,12 +116,10 @@ header {
 footer {
     background-color: #111827;
     color: white;
-
     text-align: center;
-
     padding: 25px;
-
     margin-top: 50px;
+    width: 200%;
 }
 
 /* RESPONSIVO */
@@ -142,4 +140,415 @@ footer {
         font-size: 32px;
     }
 
+}
+/* ==========================================
+   FORMULÁRIOS
+========================================== */
+
+.formulario {
+
+    max-width: 600px;
+
+    margin: 40px auto;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+}
+
+.formulario h2,
+.formulario h3 {
+
+    margin-bottom: 25px;
+
+    text-align: center;
+
+}
+
+
+.formulario form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+
+
+.formulario label {
+
+    font-weight: bold;
+
+    margin-top: 10px;
+
+}
+
+
+.formulario input,
+.formulario select {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+}
+
+
+.formulario input:focus,
+.formulario select:focus {
+
+    outline: none;
+
+    border-color: #2563eb;
+
+}
+
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.container {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 50px 20px;
+
+}
+
+
+.container > h2 {
+
+    text-align: center;
+
+    font-size: 32px;
+
+}
+
+
+.descricao {
+
+    text-align: center;
+
+    margin-top: 10px;
+
+    color: #666;
+
+}
+
+
+/* ==========================================
+   LISTA DE LIVROS
+========================================== */
+
+.lista-livros {
+
+    margin-top: 50px;
+
+}
+
+
+.lista-livros h3 {
+
+    margin-bottom: 20px;
+
+}
+
+
+#listaLivros {
+
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(250px, 1fr)
+    );
+
+    gap: 20px;
+
+}
+
+
+.card-livro {
+
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+
+}
+
+
+.card-livro h4 {
+
+    font-size: 20px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.card-livro p {
+
+    margin-bottom: 8px;
+
+    color: #555;
+
+}
+
+
+/* ==========================================
+   BOTÕES
+========================================== */
+
+.acoes {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+}
+
+
+.btn-editar,
+.btn-excluir {
+
+    border: none;
+
+    padding: 10px 15px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+}
+
+
+.btn-editar {
+
+    background-color: #f59e0b;
+
+    color: white;
+
+}
+
+
+.btn-excluir {
+
+    background-color: #dc2626;
+
+    color: white;
+
+}
+
+
+.btn-editar:hover {
+
+    background-color: #d97706;
+
+}
+
+
+.btn-excluir:hover {
+
+    background-color: #b91c1c;
+
+}
+
+
+.mensagem-vazia {
+
+    text-align: center;
+
+    color: #777;
+
+    padding: 30px;
+
+}
+/* ==========================================
+   PÁGINAS INTERNAS
+========================================== */
+
+.pagina {
+
+    max-width: 850px;
+
+    margin: 40px auto;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+
+}
+
+
+.pagina h2 {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    font-size: 32px;
+
+}
+
+
+.pagina h3 {
+
+    margin-top: 30px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.pagina p {
+
+    line-height: 1.7;
+
+    margin-bottom: 15px;
+
+    color: #555;
+
+}
+
+
+/* TECNOLOGIAS */
+
+.tecnologias {
+
+    padding-left: 25px;
+
+}
+
+
+.tecnologias li {
+
+    margin-bottom: 10px;
+
+}
+
+
+/* TEXTAREA */
+
+.formulario textarea {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 16px;
+
+    resize: vertical;
+
+}
+
+
+.formulario textarea:focus {
+
+    outline: none;
+
+    border-color: #2563eb;
+
+}
+/* ==========================================
+   TEXTOS DOS FORMULÁRIOS
+========================================== */
+
+.texto-formulario {
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: #666;
+
+}
+
+
+.texto-formulario a {
+
+    color: #2563eb;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+}
+
+
+.texto-formulario a:hover {
+
+    text-decoration: underline;
+
+}
+
+/* AJUSTE DA IMAGEM DA PÁGINA INICIAL */
+
+..hero {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-conteudo {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagem-hero {
+    width: 300px !important;
+    height: 200px !important;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
 }

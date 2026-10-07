@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Biblioteca | Livros</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- MENU -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <h1 class="logo">
+                📚 Biblioteca
+            </h1>
+
+            <ul class="menu">
+
+                <li>
+                    <a href="index.html">Início</a>
+                </li>
+
+                <li>
+                    <a href="livros.html">Livros</a>
+                </li>
+
+                <li>
+                    <a href="cadastro.html">Cadastro</a>
+                </li>
+
+                <li>
+                    <a href="sobre.html">Sobre</a>
+                </li>
+
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+
+                <li>
+                    <a href="login.html">Login</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- CONTEÚDO -->
+
+    <main class="container">
+
+        <h2>
+            Gerenciamento de Livros
+        </h2>
+
+        <p class="descricao">
+            Cadastre, consulte, altere ou exclua livros da biblioteca.
+        </p>
+
+
+        <!-- FORMULÁRIO DO LIVRO -->
+
+        <section class="formulario">
+
+            <h3>
+                Cadastrar Livro
+            </h3>
+
+            <form id="formLivro">
+
+                <input
+                    type="hidden"
+                    id="indiceLivro"
+                >
+
+
+                <label for="titulo">
+                    Título
+                </label>
+
+                <input
+                    type="text"
+                    id="titulo"
+                    placeholder="Digite o título do livro"
+                    required
+                >
+
+
+                <label for="autor">
+                    Autor
+                </label>
+
+                <input
+                    type="text"
+                    id="autor"
+                    placeholder="Digite o nome do autor"
+                    required
+                >
+
+
+                <label for="ano">
+                    Ano de publicação
+                </label>
+
+                <input
+                    type="number"
+                    id="ano"
+                    placeholder="Ex: 2024"
+                    required
+                >
+
+
+                <label for="categoria">
+                    Categoria
+                </label>
+
+                <select id="categoria" required>
+
+                    <option value="">
+                        Selecione uma categoria
+                    </option>
+
+                    <option value="Romance">
+                        Romance
+                    </option>
+
+                    <option value="Ficção">
+                        Ficção
+                    </option>
+
+                    <option value="Aventura">
+                        Aventura
+                    </option>
+
+                    <option value="Fantasia">
+                        Fantasia
+                    </option>
+
+                    <option value="Religião">
+                        Religião
+                    </option>
+
+                    <option value="Educação">
+                        Educação
+                    </option>
+
+                </select>
+
+
+                <button
+                    type="submit"
+                    class="btn"
+                    id="botaoSalvar"
+                >
+                    Cadastrar Livro
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- LISTAGEM -->
+
+        <section class="lista-livros">
+
+            <h3>
+                Livros cadastrados
+            </h3>
+
+            <div id="listaLivros">
+
+                <!-- Os livros aparecerão aqui pelo JavaScript -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <p>
+            © 2026 Biblioteca - Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
